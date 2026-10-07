@@ -1,0 +1,11 @@
+[build]
+  command = "echo Static site already prepared"
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-cache"
